@@ -14,7 +14,7 @@ gem install bundler
 
 
 #### Step-2: Working repository
-- Clone or download this repository
+- **[Clone or download this repository](https://github.com/astikanand/github-pages-boilerplate)**
 - Install Jekyll and other dependencies
 Go to repo directory and then do
 ```
