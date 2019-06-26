@@ -15,48 +15,45 @@
     line-height: 1.225;
     border-bottom: 1px solid #eee;
     color: rgb(255, 47, 146);
-    margin-top: 1.75em;
+    margin-top: 1.8em;
+    margin-bottom: 0.1em;
 }
 .markdown-body h3 {
     font-size: 1.5em;
     line-height: 1.43;
     color: rgb(148, 55, 255);
-    margin-top: 1.5em;
+    margin-top: 1.8em;
+    margin-bottom: 0.1em;
 }
 .markdown-body h4 {
     font-size: 1.25em;
-    color: rgb(146, 144, 0);
-    margin-top: 1.25em;
+    color: chocolate;
+    margin-top: 1.8em;
+    margin-bottom: 0.1em;
 }
 .markdown-body h5 {
     font-size: 1em;
     color: rgb(0, 144, 81);
-    margin-top: 1em;
+    margin-top: 1.8em;
+    margin-bottom: 0.1em;
 }
 
 .markdown-body h6 {
     font-size: 1em;
     color: rgb(0, 84, 147) !important;
-    margin-top: 0.8em;
+    margin-top: 1.8em;
+    margin-bottom: 0.1em;
 }
 
-blockquote {
-    margin-bottom: 10px !important ;
-    padding: 5px 10px !important;
-    background-color: #FFF8DC !important;
-    border-left: 4px solid #ffeb8e !important;
-}
-
-img {
-    width: 35%;
+.markdown-body blockquote {
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    background-color: #FFF8DC;
+    border-left: 4px solid #ffeb8e;
 }
 
 img, code, .md-fences, blockquote {
-    margin-left: 0em !important;
-}
-
-code {
-    background-color: lightgray;
+    margin-left: 0em;
 }
 
 html {
@@ -76,29 +73,15 @@ body, .markdown-body {
     line-height: 1.6;
 }
 
-.markdown-body li > p {
-    margin-top: 5px;
+.markdown-body code{
+    background-color: #f7f7f9
 }
-
-.markdown-body li + li {
-    margin-top: 2px;
-}
-
-.markdown-body p{
-    margin-top: 0;
-    margin-bottom: 7px;
-}
-
 
 a {
     color: #4183C4;
     text-decoration: underline;
 }
 
-li>ol,
-li>ul {
-    margin: 0 0;
-}
 hr {
     height: 2px;
     padding: 0;
@@ -109,12 +92,18 @@ hr {
     box-sizing: content-box;
 }
 
+li>ol,
+li>ul {
+    margin: 0 0;
+}
+
 li p.first {
     display: inline-block;
 }
 ul,
 ol {
     padding-left: 30px;
+    margin-top: 0;
 }
 ul:first-child,
 ol:first-child {
@@ -123,4 +112,9 @@ ol:first-child {
 ul:last-child,
 ol:last-child {
     margin-bottom: 0;
+}
+
+p, li>p, .markdown-body p, .markdown-body li>p{
+    margin-top: 0;
+    margin-bottom: 2px;
 }
