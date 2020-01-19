@@ -8,6 +8,7 @@
     font-size: 2.2em;
     line-height: 1.2;
     border-bottom: 1px solid #eee;
+    font-weight: bold;
 }
 .markdown-body h2 {
     padding-bottom: .3em;
@@ -24,23 +25,24 @@
     color: rgb(148, 55, 255);
     margin-top: 1.8em;
     margin-bottom: 0.1em;
+    font-weight: bold;
 }
 .markdown-body h4 {
     font-size: 1.25em;
-    color: chocolate;
+    color: #ffa500;
     margin-top: 1.8em;
     margin-bottom: 0.1em;
 }
 .markdown-body h5 {
     font-size: 1em;
-    color: rgb(0, 144, 81);
+    color: #86c232;
     margin-top: 1.8em;
     margin-bottom: 0.1em;
 }
 
 .markdown-body h6 {
     font-size: 1em;
-    color: rgb(0, 84, 147) !important;
+    color: #3399ff !important;
     margin-top: 1.8em;
     margin-bottom: 0.1em;
 }
@@ -50,6 +52,14 @@
     padding: 5px 10px;
     background-color: #FFF8DC;
     border-left: 4px solid #ffeb8e;
+}
+
+h1 + h2, h1 + h3, h1 + h4, h1 + h5, h1 + h6,
+h2 + h3, h2 + h4, h2 + h5, h2 + h6,
+h3 + h4, h3 + h5, h3 + h6,
+h4 + h5, h4 + h6,
+h5 + h6 {
+  margin-top: 5px !important;
 }
 
 img, code, .md-fences, blockquote {
@@ -104,6 +114,7 @@ ul,
 ol {
     padding-left: 30px;
     margin-top: 0;
+    margin-bottom: 5px;
 }
 ul:first-child,
 ol:first-child {
@@ -117,4 +128,45 @@ ol:last-child {
 p, li>p, .markdown-body p, .markdown-body li>p{
     margin-top: 0;
     margin-bottom: 2px;
+}
+
+.next-button{
+    background-color: limegreen;
+    border: none;
+    color: white;
+    padding: 8px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 2px;
+    float: right;
+    font-weight: bold;
+}
+  
+.prev-button{
+    background-color: royalblue;
+    border: none;
+    color: white;
+    padding: 8px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 2px;
+    float: left;
+    font-weight: bold;
+}
+
+a[href=""] {
+    color: #A16E83;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.md-fences {
+    margin-bottom: 7px;
+    margin-top: 5px;
 }
